@@ -11,6 +11,10 @@
 	
 	<!-- Estilos de los botones -->
 	<link rel="stylesheet" href="botones.css">
+	<link rel="stylesheet" href="particulas/fondo_particulas.css">
+
+
+
 	<title>Recursos esteticos simples para que tu web</title>
 	<script src="/particulas/particles.min.js"></script>
 </head>
@@ -61,21 +65,37 @@
 		<h2>Particles js</h2>
 
 		<h3>https://vincentgarreau.com/particles.js/</h3>
+		<script src="particulas/particles.min.js"></script>
+		<script>
+			function carga_particulas(i){
+				particlesJS.load('particles-js'+i, 'particulas/conf'+i+'.json', function() {
+					console.log('callback - particles.js config loaded');
+				});
+			}
+		
+		</script>
 
-
-		<div id="particles-js"></div>
-		<script src="/particulas/particles.min.js"></script>
-		<script src="/particulas/app.js"></script>
-
-
-		<div class="contenedor-botones">
-
-			<div class="fondo uno">
-
-
+		<div id="particulas">
+			<script>carga_particulas(1)</script>
+			<div id="particles-js1">
+				<h3 id="ftext1">Fondo 1</h3>
 			</div>
-
 		</div>
+		
+		<div id="particulas" >
+			<h3 id="ftext2">Fondo 2</h3>
+			<script>carga_particulas(2)</script>
+			<div id="particles-js2"></div>
+		</div>
+		
+
+		<div id="particulas">
+			<h3 id="ftext3">Fondo 3</h3>
+			<script>carga_particulas(3)</script>
+			<div id="particles-js3"></div>
+		</div>
+		
+		
 
 	</div>
 

@@ -1,0 +1,26 @@
+#particulas{
+    margin-top: 2vh;
+}
+
+
+#ftext1{
+    z-index: 50;
+    font-size: 25px;
+    margin-left: 450px;
+    position: absolute;
+}
+
+#particles-js1{
+    background-color: rgb(0, 17, 255);
+    margin-top: 10vh;
+    width: 50vw;
+    z-index: 2;
+
+}
+
+#particles-js2{
+    background-color: rgb(0, 0, 0);
+    margin-top: 10vh;
+    width: 50vw;
+    z-index: -1;
+}
