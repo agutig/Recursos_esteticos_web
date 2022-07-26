@@ -1,26 +1,36 @@
 #particulas{
     margin-top: 2vh;
-}
-
-
-#ftext1{
-    z-index: 50;
-    font-size: 25px;
-    margin-left: 450px;
-    position: absolute;
+    text-align: center;
 }
 
 #particles-js1{
-    background-color: rgb(0, 17, 255);
+    background-color: rgb(0, 0, 0);
     margin-top: 10vh;
-    width: 50vw;
+    width: 75vw;
     z-index: 2;
 
+}
+
+#particles-js1{
+    background-color: rgb(0, 0, 0);
+    margin-top: 10vh;
+    width: 75vw;
+    height: 50vh;
+    z-index: -1;
 }
 
 #particles-js2{
     background-color: rgb(0, 0, 0);
     margin-top: 10vh;
-    width: 50vw;
+    width: 75vw;
+    height: 50vh;
     z-index: -1;
+}
+
+#particles-js3{
+    background-color: rgb(0, 0, 0);
+    margin-top: 10vh;
+    width: 75vw;
+    z-index: -1;
+    height: 50vh;
 }
